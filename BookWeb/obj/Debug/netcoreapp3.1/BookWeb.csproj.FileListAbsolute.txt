@@ -1,0 +1,9 @@
+E:\Studying\BookWebApi\BookWeb\obj\Debug\netcoreapp3.1\BookWeb.csprojAssemblyReference.cache
+E:\Studying\BookWebApi\BookWeb\obj\Debug\netcoreapp3.1\staticwebassets\BookWeb.StaticWebAssets.Manifest.cache
+E:\Studying\BookWebApi\BookWeb\obj\Debug\netcoreapp3.1\staticwebassets\BookWeb.StaticWebAssets.xml
+E:\Studying\BookWebApi\BookWeb\obj\Debug\netcoreapp3.1\BookWeb.MvcApplicationPartsAssemblyInfo.cs
+E:\Studying\BookWebApi\BookWeb\obj\Debug\netcoreapp3.1\BookWeb.MvcApplicationPartsAssemblyInfo.cache
+E:\Studying\BookWebApi\BookWeb\obj\Debug\netcoreapp3.1\BookWeb.RazorAssemblyInfo.cache
+E:\Studying\BookWebApi\BookWeb\obj\Debug\netcoreapp3.1\BookWeb.RazorAssemblyInfo.cs
+E:\Studying\BookWebApi\BookWeb\obj\Debug\netcoreapp3.1\BookWeb.AssemblyInfoInputs.cache
+E:\Studying\BookWebApi\BookWeb\obj\Debug\netcoreapp3.1\BookWeb.AssemblyInfo.cs

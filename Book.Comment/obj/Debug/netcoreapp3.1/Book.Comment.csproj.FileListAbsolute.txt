@@ -1,0 +1,8 @@
+E:\Studying\BookWebApi\Book.Comment\bin\Debug\netcoreapp3.1\Book.Comment.deps.json
+E:\Studying\BookWebApi\Book.Comment\bin\Debug\netcoreapp3.1\Book.Comment.dll
+E:\Studying\BookWebApi\Book.Comment\bin\Debug\netcoreapp3.1\Book.Comment.pdb
+E:\Studying\BookWebApi\Book.Comment\obj\Debug\netcoreapp3.1\Book.Comment.AssemblyInfoInputs.cache
+E:\Studying\BookWebApi\Book.Comment\obj\Debug\netcoreapp3.1\Book.Comment.AssemblyInfo.cs
+E:\Studying\BookWebApi\Book.Comment\obj\Debug\netcoreapp3.1\Book.Comment.dll
+E:\Studying\BookWebApi\Book.Comment\obj\Debug\netcoreapp3.1\Book.Comment.pdb
+E:\Studying\BookWebApi\Book.Comment\obj\Debug\netcoreapp3.1\Book.Comment.csprojAssemblyReference.cache

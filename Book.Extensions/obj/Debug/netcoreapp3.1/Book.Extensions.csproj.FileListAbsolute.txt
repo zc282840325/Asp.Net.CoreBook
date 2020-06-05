@@ -1,0 +1,11 @@
+E:\Studying\BookWebApi\Book.Extensions\bin\Debug\netcoreapp3.1\Book.Extensions.deps.json
+E:\Studying\BookWebApi\Book.Extensions\bin\Debug\netcoreapp3.1\Book.Extensions.dll
+E:\Studying\BookWebApi\Book.Extensions\bin\Debug\netcoreapp3.1\Book.Extensions.pdb
+E:\Studying\BookWebApi\Book.Extensions\bin\Debug\netcoreapp3.1\Book.Comment.dll
+E:\Studying\BookWebApi\Book.Extensions\bin\Debug\netcoreapp3.1\Book.Comment.pdb
+E:\Studying\BookWebApi\Book.Extensions\obj\Debug\netcoreapp3.1\Book.Extensions.csprojAssemblyReference.cache
+E:\Studying\BookWebApi\Book.Extensions\obj\Debug\netcoreapp3.1\Book.Extensions.AssemblyInfoInputs.cache
+E:\Studying\BookWebApi\Book.Extensions\obj\Debug\netcoreapp3.1\Book.Extensions.AssemblyInfo.cs
+E:\Studying\BookWebApi\Book.Extensions\obj\Debug\netcoreapp3.1\Book.Extensions.csproj.CopyComplete
+E:\Studying\BookWebApi\Book.Extensions\obj\Debug\netcoreapp3.1\Book.Extensions.dll
+E:\Studying\BookWebApi\Book.Extensions\obj\Debug\netcoreapp3.1\Book.Extensions.pdb
