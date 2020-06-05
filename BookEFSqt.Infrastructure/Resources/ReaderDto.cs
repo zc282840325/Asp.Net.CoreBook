@@ -9,7 +9,7 @@ namespace BookEFSqt.Infrastructure.Resources
    public class ReaderDto
     {
         /// <summary>
-        /// 证书编号
+        /// 证书编号1
         /// </summary>
         public int CertificateNumber { get; set; }
         /// <summary>
