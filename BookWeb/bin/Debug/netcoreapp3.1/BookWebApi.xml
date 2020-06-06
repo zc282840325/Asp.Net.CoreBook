@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BookWebApi</name>
+    </assembly>
+    <members>
+        <member name="M:BookWebApi.Controllers.BookModelController.GetAllAsync">
+            <summary>
+             获取列表
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:BookWebApi.Controllers.BookModelController.GetByIdAsync(System.Int32)">
+            <summary>
+             获取一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.BookModelController.Add(Book.Core.Entities.BookModel)">
+            <summary>
+             添加一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.BookModelController.Update(Book.Core.Entities.BookModel)">
+            <summary>
+             修改一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.BookModelController.DeleteStaff(System.Int32)">
+            <summary>
+             删除一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.BookTypeController.GetAllAsync">
+            <summary>
+             获取列表
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:BookWebApi.Controllers.BookTypeController.GetByIdAsync(System.Int32)">
+            <summary>
+             获取一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.BookTypeController.Add(Book.Core.Entities.BookType)">
+            <summary>
+             添加一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.BookTypeController.Update(Book.Core.Entities.BookType)">
+            <summary>
+             修改一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.BookTypeController.DeleteStaff(System.Int32)">
+            <summary>
+             删除一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.FineBillController.GetAllAsync">
+            <summary>
+             获取列表
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:BookWebApi.Controllers.FineBillController.GetByIdAsync(System.Int32)">
+            <summary>
+             获取一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.FineBillController.Add(Book.Core.Entities.FineBill)">
+            <summary>
+             添加一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.FineBillController.Update(Book.Core.Entities.FineBill)">
+            <summary>
+             修改一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.FineBillController.DeleteStaff(System.Int32)">
+            <summary>
+             删除一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.LibraryController.GetAllAsync">
+            <summary>
+             获取列表
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:BookWebApi.Controllers.LibraryController.GetByIdAsync(System.Int32)">
+            <summary>
+             获取一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.LibraryController.Add(Book.Core.Entities.Library)">
+            <summary>
+             添加一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.LibraryController.Update(Book.Core.Entities.Library)">
+            <summary>
+             修改一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.LibraryController.DeleteStaff(System.Int32)">
+            <summary>
+             删除一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.PublishingHouseController.GetAllAsync">
+            <summary>
+             获取列表
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:BookWebApi.Controllers.PublishingHouseController.GetByIdAsync(System.Int32)">
+            <summary>
+             获取一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.PublishingHouseController.Add(Book.Core.Entities.PublishingHouse)">
+            <summary>
+             添加一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.PublishingHouseController.Update(Book.Core.Entities.PublishingHouse)">
+            <summary>
+             修改一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.PublishingHouseController.Delete(System.Int32)">
+            <summary>
+             删除一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.ReaderController.GetAllAsync">
+            <summary>
+             获取列表
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:BookWebApi.Controllers.ReaderController.GetByIdAsync(System.Int32)">
+            <summary>
+             获取一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.ReaderController.Add(Book.Core.Entities.Reader)">
+            <summary>
+             添加一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.ReaderController.Update(Book.Core.Entities.Reader)">
+            <summary>
+             修改一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.ReaderController.DeleteStaff(System.Int32)">
+            <summary>
+             删除一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.ReaderTypeController.GetAllAsync">
+            <summary>
+             获取列表
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:BookWebApi.Controllers.ReaderTypeController.GetByIdAsync(System.Int32)">
+            <summary>
+             获取一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.ReaderTypeController.Add(Book.Core.Entities.ReaderType)">
+            <summary>
+             添加一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.ReaderTypeController.Update(Book.Core.Entities.ReaderType)">
+            <summary>
+             修改一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.ReaderTypeController.DeleteStaff(System.Int32)">
+            <summary>
+             删除一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.StaffController.GetAllAsync">
+            <summary>
+             获取列表
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:BookWebApi.Controllers.StaffController.GetByIdAsync(System.Int32)">
+            <summary>
+             获取一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.StaffController.Add(Book.Core.Entities.Staff)">
+            <summary>
+             添加一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.StaffController.Update(Book.Core.Entities.Staff)">
+            <summary>
+             修改一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.StaffController.DeleteStaff(System.Int32)">
+            <summary>
+             删除一条数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookWebApi.Controllers.TokenController.GetToken">
+            <summary>
+            获取Token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BookWebApi.GlobalExceptionsFilter">
+            <summary>
+            全局异常错误日志
+            </summary>
+        </member>
+        <member name="M:BookWebApi.GlobalExceptionsFilter.WriteLog(System.String,System.Exception)">
+            <summary>
+            自定义返回格式
+            </summary>
+            <param name="throwMsg"></param>
+            <param name="ex"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BookWebApi.JsonErrorResponse.Message">
+            <summary>
+            生产环境的消息
+            </summary>
+        </member>
+        <member name="P:BookWebApi.JsonErrorResponse.DevelopmentMessage">
+            <summary>
+            开发环境的消息
+            </summary>
+        </member>
+        <member name="T:BookWebApi.File.GlobalRoutePrefixFilter">
+            <summary>
+            全局路由前缀公约
+            </summary>
+        </member>
+        <member name="M:BookWebApi.Startup.JWTConfig(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            使用 Microsoft.AspNetCore.Authentication.JwtBearer
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="P:BookWebApi.Tools.JwtSettings.Issuer">
+            <summary>
+            证书颁发者
+            </summary>
+        </member>
+        <member name="P:BookWebApi.Tools.JwtSettings.Audience">
+            <summary>
+            允许使用的角色
+            </summary>
+        </member>
+        <member name="P:BookWebApi.Tools.JwtSettings.SecurityKey">
+            <summary>
+            加密字符串
+            </summary>
+        </member>
+        <member name="P:BookWebApi.Tools.JwtSettings.IsEnabled">
+            <summary>
+            是否禁用
+            </summary>
+        </member>
+    </members>
+</doc>
