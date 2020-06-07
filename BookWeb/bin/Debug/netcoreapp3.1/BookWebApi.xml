@@ -4,37 +4,6 @@
         <name>BookWebApi</name>
     </assembly>
     <members>
-        <member name="M:BookWebApi.Controllers.BookModelController.GetAllAsync">
-            <summary>
-             获取列表
-            </summary>
-            <returns></returns>
-            
-        </member>
-        <member name="M:BookWebApi.Controllers.BookModelController.GetByIdAsync(System.Int32)">
-            <summary>
-             获取一条数据
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BookWebApi.Controllers.BookModelController.Add(Book.Core.Entities.BookModel)">
-            <summary>
-             添加一条数据
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BookWebApi.Controllers.BookModelController.Update(Book.Core.Entities.BookModel)">
-            <summary>
-             修改一条数据
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BookWebApi.Controllers.BookModelController.DeleteStaff(System.Int32)">
-            <summary>
-             删除一条数据
-            </summary>
-            <returns></returns>
-        </member>
         <member name="M:BookWebApi.Controllers.BookTypeController.GetAllAsync">
             <summary>
              获取列表
@@ -61,37 +30,6 @@
             <returns></returns>
         </member>
         <member name="M:BookWebApi.Controllers.BookTypeController.DeleteStaff(System.Int32)">
-            <summary>
-             删除一条数据
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BookWebApi.Controllers.FineBillController.GetAllAsync">
-            <summary>
-             获取列表
-            </summary>
-            <returns></returns>
-            
-        </member>
-        <member name="M:BookWebApi.Controllers.FineBillController.GetByIdAsync(System.Int32)">
-            <summary>
-             获取一条数据
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BookWebApi.Controllers.FineBillController.Add(Book.Core.Entities.FineBill)">
-            <summary>
-             添加一条数据
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BookWebApi.Controllers.FineBillController.Update(Book.Core.Entities.FineBill)">
-            <summary>
-             修改一条数据
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BookWebApi.Controllers.FineBillController.DeleteStaff(System.Int32)">
             <summary>
              删除一条数据
             </summary>

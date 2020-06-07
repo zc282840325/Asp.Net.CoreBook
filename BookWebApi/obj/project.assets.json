@@ -3402,21 +3402,6 @@
           "bin/placeholder/Book.Extensions.dll": {}
         }
       },
-      "Book.Service/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Book.Comment": "1.0.0",
-          "Book.Core": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "3.1.4"
-        },
-        "compile": {
-          "bin/placeholder/Book.Service.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Book.Service.dll": {}
-        }
-      },
       "BookEFSqt.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -10339,11 +10324,6 @@
       "path": "../Book.Extensions/Book.Extensions.csproj",
       "msbuildProject": "../Book.Extensions/Book.Extensions.csproj"
     },
-    "Book.Service/1.0.0": {
-      "type": "project",
-      "path": "../Book.Service/Book.Service.csproj",
-      "msbuildProject": "../Book.Service/Book.Service.csproj"
-    },
     "BookEFSqt.Infrastructure/1.0.0": {
       "type": "project",
       "path": "../BookEFSqt.Infrastructure/BookEFSqt.Infrastructure.csproj",
@@ -10357,7 +10337,6 @@
       "Book.Comment >= 1.0.0",
       "Book.Core >= 1.0.0",
       "Book.Extensions >= 1.0.0",
-      "Book.Service >= 1.0.0",
       "BookEFSqt.Infrastructure >= 1.0.0",
       "IdentityModel >= 4.3.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.4",
@@ -10375,21 +10354,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Studying\\BookWebApi\\BookWebApi\\BookWebApi.csproj",
+      "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\BookWebApi\\BookWebApi.csproj",
       "projectName": "BookWebApi",
-      "projectPath": "E:\\Studying\\BookWebApi\\BookWebApi\\BookWebApi.csproj",
+      "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\BookWebApi\\BookWebApi.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\Studying\\BookWebApi\\BookWebApi\\obj\\",
+      "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\BookWebApi\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -10405,20 +10380,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\Studying\\BookWebApi\\Book.Comment\\Book.Comment.csproj": {
-              "projectPath": "E:\\Studying\\BookWebApi\\Book.Comment\\Book.Comment.csproj"
+            "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj": {
+              "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj"
             },
-            "E:\\Studying\\BookWebApi\\Book.Core\\Book.Core.csproj": {
-              "projectPath": "E:\\Studying\\BookWebApi\\Book.Core\\Book.Core.csproj"
+            "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj": {
+              "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj"
             },
-            "E:\\Studying\\BookWebApi\\Book.Extensions\\Book.Extensions.csproj": {
-              "projectPath": "E:\\Studying\\BookWebApi\\Book.Extensions\\Book.Extensions.csproj"
+            "E:\\Studying\\Asp.Net.CoreBook\\Book.Extensions\\Book.Extensions.csproj": {
+              "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Extensions\\Book.Extensions.csproj"
             },
-            "E:\\Studying\\BookWebApi\\Book.Service\\Book.Service.csproj": {
-              "projectPath": "E:\\Studying\\BookWebApi\\Book.Service\\Book.Service.csproj"
-            },
-            "E:\\Studying\\BookWebApi\\BookEFSqt.Infrastructure\\BookEFSqt.Infrastructure.csproj": {
-              "projectPath": "E:\\Studying\\BookWebApi\\BookEFSqt.Infrastructure\\BookEFSqt.Infrastructure.csproj"
+            "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\BookEFSqt.Infrastructure.csproj": {
+              "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\BookEFSqt.Infrastructure.csproj"
             }
           }
         }

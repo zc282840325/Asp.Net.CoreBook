@@ -253,21 +253,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Studying\\BookWebApi\\Book.Extensions\\Book.Extensions.csproj",
+      "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\Book.Extensions\\Book.Extensions.csproj",
       "projectName": "Book.Extensions",
-      "projectPath": "E:\\Studying\\BookWebApi\\Book.Extensions\\Book.Extensions.csproj",
+      "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Extensions\\Book.Extensions.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\Studying\\BookWebApi\\Book.Extensions\\obj\\",
+      "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Extensions\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -283,8 +279,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\Studying\\BookWebApi\\Book.Comment\\Book.Comment.csproj": {
-              "projectPath": "E:\\Studying\\BookWebApi\\Book.Comment\\Book.Comment.csproj"
+            "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj": {
+              "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj"
             }
           }
         }

@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Studying\\BookWebApi\\BookWeb\\BookWeb.csproj": {}
+    "E:\\Studying\\Asp.Net.CoreBook\\BookWeb\\BookWeb.csproj": {}
   },
   "projects": {
-    "E:\\Studying\\BookWebApi\\Book.Comment\\Book.Comment.csproj": {
+    "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Studying\\BookWebApi\\Book.Comment\\Book.Comment.csproj",
+        "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj",
         "projectName": "Book.Comment",
-        "projectPath": "E:\\Studying\\BookWebApi\\Book.Comment\\Book.Comment.csproj",
+        "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Studying\\BookWebApi\\Book.Comment\\obj\\",
+        "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -78,18 +75,15 @@
         }
       }
     },
-    "E:\\Studying\\BookWebApi\\Book.Core\\Book.Core.csproj": {
+    "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Studying\\BookWebApi\\Book.Core\\Book.Core.csproj",
+        "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj",
         "projectName": "Book.Core",
-        "projectPath": "E:\\Studying\\BookWebApi\\Book.Core\\Book.Core.csproj",
+        "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Studying\\BookWebApi\\Book.Core\\obj\\",
+        "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -105,8 +99,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\Studying\\BookWebApi\\Book.Comment\\Book.Comment.csproj": {
-                "projectPath": "E:\\Studying\\BookWebApi\\Book.Comment\\Book.Comment.csproj"
+              "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj"
               }
             }
           }
@@ -144,18 +138,15 @@
         }
       }
     },
-    "E:\\Studying\\BookWebApi\\Book.Extensions\\Book.Extensions.csproj": {
+    "E:\\Studying\\Asp.Net.CoreBook\\Book.Extensions\\Book.Extensions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Studying\\BookWebApi\\Book.Extensions\\Book.Extensions.csproj",
+        "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\Book.Extensions\\Book.Extensions.csproj",
         "projectName": "Book.Extensions",
-        "projectPath": "E:\\Studying\\BookWebApi\\Book.Extensions\\Book.Extensions.csproj",
+        "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Extensions\\Book.Extensions.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Studying\\BookWebApi\\Book.Extensions\\obj\\",
+        "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Extensions\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -171,8 +162,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\Studying\\BookWebApi\\Book.Comment\\Book.Comment.csproj": {
-                "projectPath": "E:\\Studying\\BookWebApi\\Book.Comment\\Book.Comment.csproj"
+              "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj"
               }
             }
           }
@@ -204,84 +195,15 @@
         }
       }
     },
-    "E:\\Studying\\BookWebApi\\Book.Service\\Book.Service.csproj": {
+    "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\BookEFSqt.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Studying\\BookWebApi\\Book.Service\\Book.Service.csproj",
-        "projectName": "Book.Service",
-        "projectPath": "E:\\Studying\\BookWebApi\\Book.Service\\Book.Service.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Studying\\BookWebApi\\Book.Service\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.cnblogs.com/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "projectReferences": {
-              "E:\\Studying\\BookWebApi\\Book.Comment\\Book.Comment.csproj": {
-                "projectPath": "E:\\Studying\\BookWebApi\\Book.Comment\\Book.Comment.csproj"
-              },
-              "E:\\Studying\\BookWebApi\\Book.Core\\Book.Core.csproj": {
-                "projectPath": "E:\\Studying\\BookWebApi\\Book.Core\\Book.Core.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[3.1.4, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "E:\\Studying\\BookWebApi\\BookEFSqt.Infrastructure\\BookEFSqt.Infrastructure.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\Studying\\BookWebApi\\BookEFSqt.Infrastructure\\BookEFSqt.Infrastructure.csproj",
+        "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\BookEFSqt.Infrastructure.csproj",
         "projectName": "BookEFSqt.Infrastructure",
-        "projectPath": "E:\\Studying\\BookWebApi\\BookEFSqt.Infrastructure\\BookEFSqt.Infrastructure.csproj",
+        "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\BookEFSqt.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Studying\\BookWebApi\\BookEFSqt.Infrastructure\\obj\\",
+        "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -297,8 +219,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\Studying\\BookWebApi\\Book.Core\\Book.Core.csproj": {
-                "projectPath": "E:\\Studying\\BookWebApi\\Book.Core\\Book.Core.csproj"
+              "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj"
               }
             }
           }
@@ -344,18 +266,15 @@
         }
       }
     },
-    "E:\\Studying\\BookWebApi\\BookWebApi\\BookWebApi.csproj": {
+    "E:\\Studying\\Asp.Net.CoreBook\\BookWebApi\\BookWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Studying\\BookWebApi\\BookWebApi\\BookWebApi.csproj",
+        "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\BookWebApi\\BookWebApi.csproj",
         "projectName": "BookWebApi",
-        "projectPath": "E:\\Studying\\BookWebApi\\BookWebApi\\BookWebApi.csproj",
+        "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\BookWebApi\\BookWebApi.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Studying\\BookWebApi\\BookWebApi\\obj\\",
+        "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\BookWebApi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -371,20 +290,17 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\Studying\\BookWebApi\\Book.Comment\\Book.Comment.csproj": {
-                "projectPath": "E:\\Studying\\BookWebApi\\Book.Comment\\Book.Comment.csproj"
+              "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj"
               },
-              "E:\\Studying\\BookWebApi\\Book.Core\\Book.Core.csproj": {
-                "projectPath": "E:\\Studying\\BookWebApi\\Book.Core\\Book.Core.csproj"
+              "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj"
               },
-              "E:\\Studying\\BookWebApi\\Book.Extensions\\Book.Extensions.csproj": {
-                "projectPath": "E:\\Studying\\BookWebApi\\Book.Extensions\\Book.Extensions.csproj"
+              "E:\\Studying\\Asp.Net.CoreBook\\Book.Extensions\\Book.Extensions.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Extensions\\Book.Extensions.csproj"
               },
-              "E:\\Studying\\BookWebApi\\Book.Service\\Book.Service.csproj": {
-                "projectPath": "E:\\Studying\\BookWebApi\\Book.Service\\Book.Service.csproj"
-              },
-              "E:\\Studying\\BookWebApi\\BookEFSqt.Infrastructure\\BookEFSqt.Infrastructure.csproj": {
-                "projectPath": "E:\\Studying\\BookWebApi\\BookEFSqt.Infrastructure\\BookEFSqt.Infrastructure.csproj"
+              "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\BookEFSqt.Infrastructure.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\BookEFSqt.Infrastructure.csproj"
               }
             }
           }
@@ -481,18 +397,15 @@
         }
       }
     },
-    "E:\\Studying\\BookWebApi\\BookWeb\\BookWeb.csproj": {
+    "E:\\Studying\\Asp.Net.CoreBook\\BookWeb\\BookWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Studying\\BookWebApi\\BookWeb\\BookWeb.csproj",
+        "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\BookWeb\\BookWeb.csproj",
         "projectName": "BookWeb",
-        "projectPath": "E:\\Studying\\BookWebApi\\BookWeb\\BookWeb.csproj",
+        "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\BookWeb\\BookWeb.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Studying\\BookWebApi\\BookWeb\\obj\\",
+        "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\BookWeb\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -508,8 +421,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\Studying\\BookWebApi\\BookWebApi\\BookWebApi.csproj": {
-                "projectPath": "E:\\Studying\\BookWebApi\\BookWebApi\\BookWebApi.csproj"
+              "E:\\Studying\\Asp.Net.CoreBook\\BookWebApi\\BookWebApi.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\BookWebApi\\BookWebApi.csproj"
               }
             }
           }

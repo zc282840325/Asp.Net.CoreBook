@@ -1,27 +1,23 @@
 ﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
   "iisSettings": {
-    "windowsAuthentication": false, 
-    "anonymousAuthentication": true, 
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:51591",
-      "sslPort": 44368
+      "applicationUrl": "http://localhost:5002",
+      "sslPort": 5002
     }
   },
   "profiles": {
-    //"IIS Express": {
-    //  "commandName": "IISExpress",
-    //  "launchBrowser": true,
-    //  "environmentVariables": {
-    //    "ASPNETCORE_ENVIRONMENT": "Development"
-    //  }
-    //},
-    "BookWeb": {
-      "commandName": "Project",
-      "launchBrowser": true,
-      "applicationUrl": "https://localhost:5001;",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+      "BookWebApi": {
+        "commandName": "Project",
+        "launchBrowser": true,
+        "launchUrl": "swagger/index.html",
+        //"launchUrl": "Home",
+        "applicationUrl": "https://localhost:5000",
+        "environmentVariables": {
+          "ASPNETCORE_ENVIRONMENT": "Development"
+        }
       }
-    }
   }
 }

@@ -4,32 +4,32 @@
         <name>BookWebApi</name>
     </assembly>
     <members>
-        <member name="M:BookWebApi.Controllers.BookTypeController.GetAllAsync">
+        <member name="M:BookWebApi.Controllers.BookModelController.GetAllAsync">
             <summary>
              获取列表
             </summary>
             <returns></returns>
             
         </member>
-        <member name="M:BookWebApi.Controllers.BookTypeController.GetByIdAsync(System.Int32)">
+        <member name="M:BookWebApi.Controllers.BookModelController.GetByIdAsync(System.Int32)">
             <summary>
              获取一条数据
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BookWebApi.Controllers.BookTypeController.Add(Book.Core.Entities.BookType)">
+        <member name="M:BookWebApi.Controllers.BookModelController.Add(Book.Core.Entities.BookModel)">
             <summary>
              添加一条数据
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BookWebApi.Controllers.BookTypeController.Update(Book.Core.Entities.BookType)">
+        <member name="M:BookWebApi.Controllers.BookModelController.Update(Book.Core.Entities.BookModel)">
             <summary>
              修改一条数据
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BookWebApi.Controllers.BookTypeController.DeleteStaff(System.Int32)">
+        <member name="M:BookWebApi.Controllers.BookModelController.Delete(System.Int32)">
             <summary>
              删除一条数据
             </summary>
@@ -60,7 +60,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BookWebApi.Controllers.LibraryController.DeleteStaff(System.Int32)">
+        <member name="M:BookWebApi.Controllers.LibraryController.Delete(System.Int32)">
             <summary>
              删除一条数据
             </summary>
@@ -122,7 +122,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BookWebApi.Controllers.ReaderController.DeleteStaff(System.Int32)">
+        <member name="M:BookWebApi.Controllers.ReaderController.Delete(System.Int32)">
             <summary>
              删除一条数据
             </summary>
@@ -153,7 +153,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BookWebApi.Controllers.ReaderTypeController.DeleteStaff(System.Int32)">
+        <member name="M:BookWebApi.Controllers.ReaderTypeController.Delete(System.Int32)">
             <summary>
              删除一条数据
             </summary>
@@ -184,7 +184,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BookWebApi.Controllers.StaffController.DeleteStaff(System.Int32)">
+        <member name="M:BookWebApi.Controllers.StaffController.Delete(System.Int32)">
             <summary>
              删除一条数据
             </summary>

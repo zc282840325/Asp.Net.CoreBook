@@ -3432,21 +3432,6 @@
           "bin/placeholder/Book.Extensions.dll": {}
         }
       },
-      "Book.Service/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Book.Comment": "1.0.0",
-          "Book.Core": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "3.1.4"
-        },
-        "compile": {
-          "bin/placeholder/Book.Service.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Book.Service.dll": {}
-        }
-      },
       "BookEFSqt.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -3472,7 +3457,6 @@
           "Book.Comment": "1.0.0",
           "Book.Core": "1.0.0",
           "Book.Extensions": "1.0.0",
-          "Book.Service": "1.0.0",
           "BookEFSqt.Infrastructure": "1.0.0",
           "IdentityModel": "4.3.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.4",
@@ -10430,11 +10414,6 @@
       "path": "../Book.Extensions/Book.Extensions.csproj",
       "msbuildProject": "../Book.Extensions/Book.Extensions.csproj"
     },
-    "Book.Service/1.0.0": {
-      "type": "project",
-      "path": "../Book.Service/Book.Service.csproj",
-      "msbuildProject": "../Book.Service/Book.Service.csproj"
-    },
     "BookEFSqt.Infrastructure/1.0.0": {
       "type": "project",
       "path": "../BookEFSqt.Infrastructure/BookEFSqt.Infrastructure.csproj",
@@ -10453,21 +10432,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Studying\\BookWebApi\\BookWeb\\BookWeb.csproj",
+      "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\BookWeb\\BookWeb.csproj",
       "projectName": "BookWeb",
-      "projectPath": "E:\\Studying\\BookWebApi\\BookWeb\\BookWeb.csproj",
+      "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\BookWeb\\BookWeb.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\Studying\\BookWebApi\\BookWeb\\obj\\",
+      "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\BookWeb\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -10483,8 +10458,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\Studying\\BookWebApi\\BookWebApi\\BookWebApi.csproj": {
-              "projectPath": "E:\\Studying\\BookWebApi\\BookWebApi\\BookWebApi.csproj"
+            "E:\\Studying\\Asp.Net.CoreBook\\BookWebApi\\BookWebApi.csproj": {
+              "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\BookWebApi\\BookWebApi.csproj"
             }
           }
         }

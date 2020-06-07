@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Studying\\BookWebApi\\Book.Comment\\Book.Comment.csproj": {}
+    "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj": {}
   },
   "projects": {
-    "E:\\Studying\\BookWebApi\\Book.Comment\\Book.Comment.csproj": {
+    "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Studying\\BookWebApi\\Book.Comment\\Book.Comment.csproj",
+        "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj",
         "projectName": "Book.Comment",
-        "projectPath": "E:\\Studying\\BookWebApi\\Book.Comment\\Book.Comment.csproj",
+        "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Studying\\BookWebApi\\Book.Comment\\obj\\",
+        "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

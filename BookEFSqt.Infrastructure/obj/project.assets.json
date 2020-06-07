@@ -7628,21 +7628,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Studying\\BookWebApi\\BookEFSqt.Infrastructure\\BookEFSqt.Infrastructure.csproj",
+      "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\BookEFSqt.Infrastructure.csproj",
       "projectName": "BookEFSqt.Infrastructure",
-      "projectPath": "E:\\Studying\\BookWebApi\\BookEFSqt.Infrastructure\\BookEFSqt.Infrastructure.csproj",
+      "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\BookEFSqt.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\Studying\\BookWebApi\\BookEFSqt.Infrastructure\\obj\\",
+      "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -7658,8 +7654,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\Studying\\BookWebApi\\Book.Core\\Book.Core.csproj": {
-              "projectPath": "E:\\Studying\\BookWebApi\\Book.Core\\Book.Core.csproj"
+            "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj": {
+              "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj"
             }
           }
         }

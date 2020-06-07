@@ -7,7 +7,6 @@ using Book.Comment;
 using Book.Core.Entities;
 using Book.Core.Interfaces;
 using BookEFSqt.Infrastructure.Resources;
-using BookWebApi.Model;
 using BookWebApi.Tools;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -75,7 +74,7 @@ namespace BookWebApi.Controllers
             _staffRepository.Add(staff);
             return new MessageModel<StaffDto>()
             {
-                msg = "获取成功",
+                msg = "添加成功",
                 success = true
              };
 
@@ -101,9 +100,9 @@ namespace BookWebApi.Controllers
         ///  删除一条数据
         /// </summary>
         /// <returns></returns>
-        [Route("DeleteStaff")]
+        [Route("Delete")]
         [HttpDelete]
-        public MessageModel<StaffDto> DeleteStaff(int id)
+        public MessageModel<StaffDto> Delete(int id)
         {
            _staffRepository.DeleteById(id);
 

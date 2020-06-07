@@ -29,7 +29,6 @@
           "Book.Comment": "1.0.0",
           "Book.Core": "1.0.0",
           "Book.Extensions": "1.0.0",
-          "Book.Service": "1.0.0",
           "BookEFSqt.Infrastructure": "1.0.0",
           "IdentityModel": "4.3.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.4",
@@ -4411,14 +4410,6 @@
           "WindowsBase.dll": {}
         },
         "compileOnly": true
-      },
-      "Book.Service/1.0.0": {
-        "dependencies": {
-          "Book.Comment": "1.0.0",
-          "Book.Core": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "3.1.4"
-        },
-        "compileOnly": true
       }
     }
   },
@@ -7290,11 +7281,6 @@
     },
     "WindowsBase/4.0.0.0": {
       "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Book.Service/1.0.0": {
-      "type": "project",
       "serviceable": false,
       "sha512": ""
     }

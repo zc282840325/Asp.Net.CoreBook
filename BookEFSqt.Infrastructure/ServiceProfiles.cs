@@ -22,6 +22,14 @@ namespace BookEFSqt.Infrastructure
             CreateMap<ReaderType, ReaderTypeDto>();
             CreateMap<Library, LibraryDto>();
             CreateMap<Reader, ReaderDto>();
+            CreateMap<BookModel, BookModelDto>();
+            CreateMap<FineBill, FineBillDto>();
+            CreateMap<BookStorage, BookStorageDto>();
+            CreateMap<BookStorageDetails, BookStorageDetailsDto>();
+            CreateMap<BookDamaged, BookDamagedDto>();
+            CreateMap<BookDamagedDetails, BookDamagedDetailsDto>();
+            CreateMap<Borrow, BorrowDto>();
+
         }
     }
 }

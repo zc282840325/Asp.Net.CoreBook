@@ -71,7 +71,7 @@ namespace BookWebApi.Controllers
             _readerRepository.Add(staff);
             return new MessageModel<ReaderDto>()
             {
-                msg = "获取成功",
+                msg = "添加成功",
                 success = true
             };
 
@@ -97,9 +97,9 @@ namespace BookWebApi.Controllers
         ///  删除一条数据
         /// </summary>
         /// <returns></returns>
-        [Route("DeleteStaff")]
+        [Route("Delete")]
         [HttpDelete]
-        public MessageModel<ReaderDto> DeleteStaff(int id)
+        public MessageModel<ReaderDto> Delete(int id)
         {
             _readerRepository.DeleteById(id);
 

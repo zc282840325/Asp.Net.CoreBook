@@ -8,7 +8,7 @@ namespace Book.Core.Entities
     /// <summary>
     /// 书库
     /// </summary>
-   public class Library
+    public class Library
     {
         /// <summary>
         /// 书库号

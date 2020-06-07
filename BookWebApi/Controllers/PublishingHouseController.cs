@@ -69,7 +69,7 @@ namespace BookWebApi.Controllers
             _publishingHouseRepository.Add(staff);
             return new MessageModel<PublishingHouseDto>()
             {
-                msg = "获取成功",
+                msg = "添加成功",
                 success = true
             };
         }

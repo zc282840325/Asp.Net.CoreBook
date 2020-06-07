@@ -15,16 +15,16 @@ namespace BookWebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BookTypeController : ControllerBase
+    public class BookModelController : ControllerBase
     {
-        private readonly ILogger<BookTypeController> _logger;
+        private readonly ILogger<BookModelController> _logger;
         private readonly IMapper _mapper;
-        public IBookTypeRepository _bookTypeRepository { get; set; }
+        public IBookModelRepository _BookModellRepository { get; set; }
 
-        public BookTypeController(ILogger<BookTypeController> logger, IBookTypeRepository bookTypeRepository, IMapper mapper)
+        public BookModelController(ILogger<BookModelController> logger, IBookModelRepository BookModelRepository, IMapper mapper)
         {
             _logger = logger;
-            _bookTypeRepository = bookTypeRepository;
+            _BookModellRepository = BookModelRepository;
             _mapper = mapper;
         }
         /// <summary>
@@ -36,9 +36,9 @@ namespace BookWebApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllAsync()
         {
-            var blogList = await _bookTypeRepository.Query();
+            var blogList = await _BookModellRepository.Query();
 
-            var blogResources = _mapper.Map<List<BookType>, IEnumerable<BookTypeDto>>(blogList);
+            var blogResources = _mapper.Map<List<BookModel>, IEnumerable<BookModelDto>>(blogList);
 
             return Ok(blogResources);
         }
@@ -52,9 +52,9 @@ namespace BookWebApi.Controllers
 
         public async Task<IActionResult> GetByIdAsync(int id)
         {
-            var BookType = await _bookTypeRepository.QueryById(id);
+            var BookModel = await _BookModellRepository.QueryById(id);
 
-            var StaffResources = _mapper.Map<BookType, BookTypeDto>(BookType);
+            var StaffResources = _mapper.Map<BookModel, BookModelDto>(BookModel);
 
             return Ok(StaffResources);
         }
@@ -65,13 +65,13 @@ namespace BookWebApi.Controllers
         /// <returns></returns>
         [Route("Add")]
         [HttpPost]
-        public MessageModel<BookTypeDto> Add(BookType staff)
+        public MessageModel<BookModelDto> Add(BookModel staff)
         {
 
-            _bookTypeRepository.Add(staff);
-            return new MessageModel<BookTypeDto>()
+            _BookModellRepository.Add(staff);
+            return new MessageModel<BookModelDto>()
             {
-                msg = "获取成功",
+                msg = "添加成功",
                 success = true
             };
 
@@ -83,11 +83,11 @@ namespace BookWebApi.Controllers
         /// <returns></returns>
         [Route("Update")]
         [HttpPost]
-        public MessageModel<BookTypeDto> Update(BookType dto)
+        public MessageModel<BookModelDto> Update(BookModel dto)
         {
-            _bookTypeRepository.Update(dto);
+            _BookModellRepository.Update(dto);
 
-            return new MessageModel<BookTypeDto>()
+            return new MessageModel<BookModelDto>()
             {
                 msg = "修改成功",
                 success = true
@@ -97,13 +97,13 @@ namespace BookWebApi.Controllers
         ///  删除一条数据
         /// </summary>
         /// <returns></returns>
-        [Route("DeleteStaff")]
+        [Route("Delete")]
         [HttpDelete]
-        public MessageModel<BookTypeDto> DeleteStaff(int id)
+        public MessageModel<BookModelDto> Delete(int id)
         {
-            _bookTypeRepository.DeleteById(id);
+            _BookModellRepository.DeleteById(id);
 
-            return new MessageModel<BookTypeDto>()
+            return new MessageModel<BookModelDto>()
             {
                 msg = "删除成功",
                 success = true
