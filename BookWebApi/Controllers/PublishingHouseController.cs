@@ -5,11 +5,12 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Book.Comment;
 using Book.Core.Entities;
-using Book.Core.Interfaces;
-using BookEFSqt.Infrastructure.Resources;
+using Book.Core.IRepository;
+using Book.Core.EntityFramWork.Resources;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BookWebApi.Controllers
 {
@@ -66,11 +67,26 @@ namespace BookWebApi.Controllers
         [HttpPost]
         public MessageModel<PublishingHouseDto> Add(PublishingHouse staff)
         {
-            _publishingHouseRepository.Add(staff);
+            bool result = false;
+            string msg = string.Empty;
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                     _publishingHouseRepository.Add(staff);
+                    msg = "添加成功";
+                    result = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                msg = ex.Message;
+            }
+
             return new MessageModel<PublishingHouseDto>()
             {
-                msg = "添加成功",
-                success = true
+                msg = msg,
+                success = result
             };
         }
         /// <summary>
@@ -79,14 +95,28 @@ namespace BookWebApi.Controllers
         /// <returns></returns>
         [Route("Update")]
         [HttpPost]
-        public MessageModel<PublishingHouseDto> Update(PublishingHouse dto)
+        public MessageModel<PublishingHouseDto> UpdateAsync(PublishingHouse dto)
         {
-            _publishingHouseRepository.Update(dto);
+            bool result = false;
+            string msg = string.Empty;
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                   _publishingHouseRepository.Update(dto);
+                    msg = "修改成功";
+                    result = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                msg = ex.Message;
+            }
 
             return new MessageModel<PublishingHouseDto>()
             {
-                msg = "修改成功",
-                success = true
+                msg = msg,
+                success = result
             };
         }
         /// <summary>
@@ -95,16 +125,49 @@ namespace BookWebApi.Controllers
         /// <returns></returns>
         [Route("Delete")]
         [HttpDelete]
-        public MessageModel<PublishingHouseDto> Delete(int id)
+        public MessageModel<PublishingHouseDto> DeleteAsync(int id)
         {
-            _publishingHouseRepository.DeleteById(id);
+            bool result = false;
+            string msg = string.Empty;
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                  _publishingHouseRepository.DeleteById(id);
+                    msg = "删除成功";
+                    result = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                msg = ex.Message;
+            }
 
             return new MessageModel<PublishingHouseDto>()
             {
-                msg = "删除成功",
-                success = true
+                msg = msg,
+                success = result
             };
         }
-   
+
+        /// <summary>
+        ///  获取中英文对应字段
+        /// </summary>
+        /// <returns></returns>
+        [Route("Info")]
+        [HttpGet]
+        [AllowAnonymous]
+        public MessageModel<string> Info()
+        {
+            var json = _publishingHouseRepository.Info(new PublishingHouse());
+
+            return new MessageModel<string>()
+            {
+                msg = "获取成功",
+                success = true,
+                response = json
+            };
+        }
+
     }
 }

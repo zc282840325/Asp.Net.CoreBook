@@ -1,10 +1,13 @@
 ﻿using Book.Core.Entities;
+using Book.Core.Model;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
-namespace BookEFSqt.Infrastructure.Database
+namespace Book.Core.EntityFramWork.Database
 {
    public class BookContext:DbContext
     {
@@ -29,9 +32,11 @@ namespace BookEFSqt.Infrastructure.Database
             modelBuilder.Entity<BookDamaged>().ToTable("tb_BookDamaged");
             modelBuilder.Entity<BookDamagedDetails>().ToTable("tb_BookDamagedDetails");
             modelBuilder.Entity<Borrow>().ToTable("tb_Borrow");
+            modelBuilder.Entity<Library>().ToTable("tb_Library");
         }
 
         public DbSet<Staff> Staffs { get; set; }
+        public DbSet<Library> Librarys { get; set; }
         public DbSet<PublishingHouse> PublishingHouses { get; set; }
         public DbSet<BookModel> BookModels { get; set; }
         public DbSet<BookType> BookTypes { get; set; }
@@ -43,6 +48,14 @@ namespace BookEFSqt.Infrastructure.Database
         public DbSet<BookDamaged> BookDamageds { get; set; }
         public DbSet<BookDamagedDetails> BookDamagedDetailss { get; set; }
         public DbSet<Borrow> Borrows { get; set; }
-        
+        public DbSet<Module> Modules { get; set; }
+        public DbSet<Permission> Permissions { get; set; }
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<RoleModulePermission> RoleModulePermissions { get; set; }
+
+
+        public DbSet<sysUserInfo> sysUserInfos { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
+        public DbSet<Feature> Features { get; set; }
     }
 }

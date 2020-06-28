@@ -10,6 +10,7 @@
         "dependencies": {
           "AutoMapper": "9.0.0",
           "Book.Core": "1.0.0",
+          "Book.Core.IRepository": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.4",
           "Microsoft.EntityFrameworkCore.Relational": "3.1.4"
         },
@@ -1681,6 +1682,14 @@
         "runtime": {
           "Book.Core.dll": {}
         }
+      },
+      "Book.Core.IRepository/1.0.0": {
+        "dependencies": {
+          "Book.Core": "1.0.0"
+        },
+        "runtime": {
+          "Book.Core.IRepository.dll": {}
+        }
       }
     }
   },
@@ -2816,6 +2825,11 @@
       "sha512": ""
     },
     "Book.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Book.Core.IRepository/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

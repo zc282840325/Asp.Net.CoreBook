@@ -1,0 +1,17 @@
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\bin\Release\netcoreapp3.1\Book.Core.EntityFramWork.deps.json
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\bin\Release\netcoreapp3.1\Book.Core.EntityFramWork.runtimeconfig.json
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\bin\Release\netcoreapp3.1\Book.Core.EntityFramWork.runtimeconfig.dev.json
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\bin\Release\netcoreapp3.1\Book.Core.EntityFramWork.dll
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\bin\Release\netcoreapp3.1\Book.Core.EntityFramWork.pdb
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\bin\Release\netcoreapp3.1\Book.Comment.dll
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\bin\Release\netcoreapp3.1\Book.Core.dll
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\bin\Release\netcoreapp3.1\Book.Core.IRepository.dll
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\bin\Release\netcoreapp3.1\Book.Core.IRepository.pdb
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\bin\Release\netcoreapp3.1\Book.Core.pdb
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\bin\Release\netcoreapp3.1\Book.Comment.pdb
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\obj\Release\netcoreapp3.1\Book.Core.EntityFramWork.csprojAssemblyReference.cache
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\obj\Release\netcoreapp3.1\Book.Core.EntityFramWork.AssemblyInfoInputs.cache
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\obj\Release\netcoreapp3.1\Book.Core.EntityFramWork.AssemblyInfo.cs
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\obj\Release\netcoreapp3.1\Book.Core.EntityFramWork.csproj.CopyComplete
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\obj\Release\netcoreapp3.1\Book.Core.EntityFramWork.dll
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\obj\Release\netcoreapp3.1\Book.Core.EntityFramWork.pdb

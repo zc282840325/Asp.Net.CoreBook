@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Book.Core.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BookEFSqt.Infrastructure.Resources
+namespace Book.Core.EntityFramWork.Resources
 {
-   public class BookModelDto
+    public class BookModelDto
     {
         /// <summary>
         /// 图书编号
@@ -17,7 +18,7 @@ namespace BookEFSqt.Infrastructure.Resources
         /// <summary>
         /// 图书类型编号
         /// </summary>
-        public string Tid { get; set; }
+        public int Tid { get; set; }
         /// <summary>
         /// 书名
         /// </summary>
@@ -29,7 +30,7 @@ namespace BookEFSqt.Infrastructure.Resources
         /// <summary>
         /// 价格
         /// </summary>
-        public double Price { get; set; }
+        public Decimal Price { get; set; }
         /// <summary>
         /// 页码
         /// </summary>
@@ -45,10 +46,20 @@ namespace BookEFSqt.Infrastructure.Resources
         /// <summary>
         /// 入库时间
         /// </summary>
-        public string StorageTime { get; set; }
+        public DateTime StorageTime { get; set; }
         /// <summary>
         /// 借出次数
         /// </summary>
-        public string OutNumbers { get; set; }
+        public int OutNumbers { get; set; }
+
+        /// <summary>
+        /// 出版社名称
+        /// </summary>
+        public string PName { get; set; }
+        /// <summary>
+        /// 图书类型名称
+        /// </summary>
+        public string TName { get; set; }
+
     }
 }

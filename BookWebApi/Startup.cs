@@ -2,21 +2,29 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using Autofac;
 using AutoMapper;
 using Book.Comment;
+using Book.Comment.GlobalVars;
 using Book.Core.Entities;
-using Book.Core.Interfaces;
-using BookEFSqt.Infrastructure;
-using BookEFSqt.Infrastructure.Database;
-using BookEFSqt.Infrastructure.Repositories;
-using BookEFSqt.Infrastructure.Resources;
-using BookWebApi.File;
+using Book.Core.EntityFramWork;
+using Book.Core.EntityFramWork.Database;
+using Book.Core.EntityFramWork.Resources;
+using Book.Core.IRepository;
+using Book.Core.Repository;
+using BookWebApi.AuthHelper.Policys;
+using BookWebApi.Filter;
 using BookWebApi.Tools;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -51,7 +59,7 @@ namespace BookWebApi
                 // 全局路由权限公约
                 //o.Conventions.Insert(0, new GlobalRouteAuthorizeConvention());
                 // 全局路由前缀，统一修改路由
-                o.Conventions.Insert(0, new GlobalRoutePrefixFilter(new RouteAttribute(RoutePrefix.Name)));
+                o.Conventions.Insert(0, new GlobalRoutePrefixFilter(new RouteAttribute(Book.Comment.GlobalVars.RoutePrefix.Name)));
             })
             //全局配置Json序列化处理
             .AddNewtonsoftJson(options =>
@@ -65,6 +73,19 @@ namespace BookWebApi
             });
             #endregion
 
+            #region 注入Cookie
+            //注册Cookie认证服务
+            services
+            .AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, option =>
+            {
+                option.Cookie.Name = "BookTokenCookie";//设置存储用户登录信息（用户Token信息）的Cookie名称
+                option.Cookie.HttpOnly = true;//设置存储用户登录信息（用户Token信息）的Cookie，无法通过客户端浏览器脚本(如JavaScript等)访问到
+                option.Cookie.SecurePolicy = Microsoft.AspNetCore.Http.CookieSecurePolicy.Always;//设置存储用户登录信息（用户Token信息）的Cookie，只会通过HTTPS协议传递，如果是HTTP协议，Cookie不会被发送。注意，option.Cookie.SecurePolicy属性的默认值是Microsoft.AspNetCore.Http.CookieSecurePolicy.SameAsRequest
+            });
+
+            #endregion
+
             #region 注册Mapper服务
             services.AddAutoMapper(typeof(ServiceProfiles));
             #endregion
@@ -76,8 +97,8 @@ namespace BookWebApi
             #endregion
 
             #region 注入服务
-
-            services.RegisterAssembly("Book.Core", "BookEFSqt.Infrastructure");
+            services.RegisterAssembly("Book.Core.IRepository", "Book.Core.Repository");
+            services.RegisterAssembly("Book.Core.IServices", "Book.Core.Services");
             #endregion
 
             #region 添加Jwt
@@ -85,6 +106,25 @@ namespace BookWebApi
             var jwtSetting = new JwtSettings();
             Configuration.Bind("Authentication:JwtBearer", jwtSetting);
 
+            var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Authentication:JwtBearer:SecurityKey"]));
+            //验证
+            //services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            //.AddJwtBearer(config =>
+            //{
+            //    config.TokenValidationParameters = new TokenValidationParameters
+            //    {
+            //        ValidateIssuer = true,//是否验证Issuer
+            //        ValidateAudience = true,//是否验证Audience
+            //        ValidateLifetime = false,//是否验证失效时间
+            //        ValidateIssuerSigningKey = true,//是否验证SecurityKey
+            //        ValidAudience = Configuration["Authentication:JwtBearer:Audience"],//Audience
+            //        ValidIssuer = Configuration["Authentication:JwtBearer:Issuer"],//Issuer，这两项和前面签发jwt的设置一致
+            //        IssuerSigningKey = signingKey//拿到SecurityKey
+            //    };
+            //});
+            #endregion
+
+            #region 添加跨域服务
             services.AddCors(options =>
             {
                 options.AddPolicy("any", builder =>
@@ -94,21 +134,6 @@ namespace BookWebApi
                     .AllowAnyHeader();
 
                 });
-            });
-            //验证
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            .AddJwtBearer(config =>
-            {
-                config.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuer = true,//是否验证Issuer
-                    ValidateAudience = true,//是否验证Audience
-                    ValidateLifetime = false,//是否验证失效时间
-                    ValidateIssuerSigningKey = true,//是否验证SecurityKey
-                    ValidAudience = Configuration["Authentication:JwtBearer:Audience"],//Audience
-                    ValidIssuer = Configuration["Authentication:JwtBearer:Issuer"],//Issuer，这两项和前面签发jwt的设置一致
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Authentication:JwtBearer:SecurityKey"]))//拿到SecurityKey
-                };
             });
             #endregion
 
@@ -132,8 +157,13 @@ namespace BookWebApi
                     In = ParameterLocation.Header,
                     Type = SecuritySchemeType.ApiKey
                 });
+                var basePath = Path.GetDirectoryName(typeof(Program).Assembly.Location);
+                Console.WriteLine("basePath:" + basePath);
+                var commentsFileName = "BookWebApi.XML";
+                var xmlPath = Path.Combine(basePath, commentsFileName);
                 //显示注释信息
-                c.IncludeXmlComments(System.IO.Path.Combine(System.AppContext.BaseDirectory, "BookWebApi.xml"));
+                c.IncludeXmlComments(xmlPath);
+            
                 //3.1版本的替换需添加
                 c.AddSecurityRequirement(new OpenApiSecurityRequirement()
                 {
@@ -150,6 +180,72 @@ namespace BookWebApi
                 });
 
             });
+            #endregion
+
+            #region 动态绑定
+            var signingCredentials = new SigningCredentials(signingKey, SecurityAlgorithms.HmacSha256);
+
+            // 如果要数据库动态绑定，这里先留个空，后边处理器里动态赋值
+            var permission = new List<PermissionItem>();
+            // 角色与接口的权限要求参数
+            var permissionRequirement = new PermissionRequirement(
+                "/api/denied",// 拒绝授权的跳转地址（目前无用）
+                permission,//这里还记得么，就是我们上边说到的角色地址信息凭据实体类 Permission
+                ClaimTypes.Role,//基于角色的授权
+                Configuration["Authentication:JwtBearer:Issuer"],//发行人
+                Configuration["Authentication:JwtBearer:Audience"],//订阅人
+                signingCredentials,//签名凭据
+                expiration: TimeSpan.FromSeconds(60 * 2)//接口的过期时间，注意这里没有了缓冲时间，你也可以自定义，在上边的TokenValidationParameters的 ClockSkew
+                );
+
+            #endregion
+
+            #region 配置授权服务，也就是具体的规则，已经对应的权限策略，比如公司不同权限的门禁卡
+            var tokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = false,//验证发行人的签名密钥
+                IssuerSigningKey = signingKey,
+                ValidateIssuer = true,//验证发行人
+                ValidIssuer = Configuration["Authentication:JwtBearer:Issuer"],//发行人
+                ValidateAudience = true,//验证订阅人
+                ValidAudience = Configuration["Authentication:JwtBearer:Audience"],//订阅人
+                ValidateLifetime = true,//验证生命周期
+                ClockSkew = TimeSpan.Zero,//这个是定义的过期的缓存时间
+                RequireExpirationTime = true,//是否要求过期
+
+            };
+
+            services.AddAuthorization(options =>
+            {
+                // 自定义基于策略的授权权限
+                // 3、复杂的策略授权
+                    options.AddPolicy("Permission",
+                             policy => policy.Requirements.Add(permissionRequirement));
+            })
+           // ② 核心之二，必需要配置认证服务，这里是jwtBearer默认认证，比如光有卡没用，得能识别他们
+           .AddAuthentication(x =>
+           {
+               x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+               x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+               x.DefaultChallengeScheme = nameof(ApiResponseHandler);
+               x.DefaultForbidScheme = nameof(ApiResponseHandler);
+           })
+           // ③ 核心之三，针对JWT的配置，比如门禁是如何识别的，是放射卡，还是磁卡
+           .AddJwtBearer(o =>
+           {
+               o.TokenValidationParameters = tokenValidationParameters;
+           }).AddScheme<AuthenticationSchemeOptions, ApiResponseHandler>(nameof(ApiResponseHandler), o => { });
+
+            #endregion
+
+            #region 注入授权处理器
+            services.AddScoped<IAuthorizationHandler, PermissionHandler>();
+
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            #endregion
+
+            #region 将授权必要类注入生命周期内
+            services.AddSingleton(permissionRequirement);
             #endregion
         }
         /// <summary>
@@ -200,22 +296,24 @@ namespace BookWebApi
             app.UseHttpsRedirection();
             //路由
             app.UseRouting();
-            //权限
-            app.UseAuthentication();
+         
             //跨域
             app.UseCors(builder =>
             {
                 builder.AllowAnyHeader();
                 builder.AllowAnyMethod();
                 builder.AllowAnyOrigin();
-                // builder.WithOrigins("http://localhost:8080");
             });
+
+            //权限
             app.UseAuthorization();
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+     
         }
     }
 }

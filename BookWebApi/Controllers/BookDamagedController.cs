@@ -7,14 +7,16 @@ using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
 using Book.Comment;
 using Book.Core.Entities;
-using Book.Core.Interfaces;
-using BookEFSqt.Infrastructure.Resources;
+using Book.Core.EntityFramWork.Resources;
 using Microsoft.Extensions.Logging;
+using Book.Core.IRepository;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BookWebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize("Permission")]
     public class BookDamagedController : ControllerBase
     {
         private readonly ILogger<BookDamagedController> _logger;
@@ -67,11 +69,26 @@ namespace BookWebApi.Controllers
         [HttpPost]
         public MessageModel<BookDamagedDto> Add(BookDamaged staff)
         {
-            _BookDamagedRepository.Add(staff);
+            bool result = false;
+            string msg = string.Empty;
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                   _BookDamagedRepository.Add(staff);
+                    result = true;
+                    msg = "添加成功";
+                }
+            }
+            catch (Exception ex)
+            {
+                msg = ex.Message;
+            }
+           
             return new MessageModel<BookDamagedDto>()
             {
-                msg = "添加成功",
-                success = true
+                msg = msg ,
+                success = result,
             };
 
         }
@@ -82,14 +99,28 @@ namespace BookWebApi.Controllers
         /// <returns></returns>
         [Route("Update")]
         [HttpPost]
-        public MessageModel<BookDamagedDto> Update(BookDamaged dto)
+        public MessageModel<BookDamagedDto> UpdateAsync(BookDamaged dto)
         {
-            _BookDamagedRepository.Update(dto);
+            bool result = false;
+            string msg = string.Empty;
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                   _BookDamagedRepository.Update(dto);
+                    msg = "修改成功";
+                    result = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                msg = ex.Message;
+            }
 
             return new MessageModel<BookDamagedDto>()
             {
-                msg = "修改成功",
-                success = true
+                msg = msg,
+                success = result,
             };
         }
         /// <summary>
@@ -98,14 +129,46 @@ namespace BookWebApi.Controllers
         /// <returns></returns>
         [Route("Delete")]
         [HttpDelete]
-        public MessageModel<BookDamagedDto> Delete(int id)
+        public MessageModel<BookDamagedDto> DeleteAsync(int id)
         {
-            _BookDamagedRepository.DeleteById(id);
+            bool result = false;
+            string msg = string.Empty;
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                   _BookDamagedRepository.DeleteById(id);
+                    msg = "删除成功";
+                    result = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                msg = ex.Message;
+            }
 
             return new MessageModel<BookDamagedDto>()
             {
-                msg = "删除成功",
-                success = true
+                msg = msg,
+                success = result,
+            };
+        }
+        /// <summary>
+        ///  获取中英文对应字段
+        /// </summary>
+        /// <returns></returns>
+        [Route("Info")]
+        [HttpGet]
+        [AllowAnonymous]
+        public MessageModel<string> Info()
+        {
+            var json = _BookDamagedRepository.Info(new BookDamaged());
+
+            return new MessageModel<string>()
+            {
+                msg = "获取成功",
+                success = true,
+                response = json
             };
         }
     }

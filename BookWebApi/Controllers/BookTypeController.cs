@@ -5,30 +5,33 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Book.Comment;
 using Book.Core.Entities;
-using Book.Core.Interfaces;
-using BookEFSqt.Infrastructure.Resources;
+using Book.Core.IRepository;
+using Book.Core.EntityFramWork.Resources;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Authorization;
+using Book.Comment.GlobalVars;
 
 namespace BookWebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BookModelController : ControllerBase
+    [Authorize(Policy = "Permission")]
+    public class BookTypeController : ControllerBase
     {
-        private readonly ILogger<BookModelController> _logger;
+        private readonly ILogger<BookTypeController> _logger;
         private readonly IMapper _mapper;
-        public IBookModelRepository _BookModellRepository { get; set; }
+        public IBookTypeRepository _BookTypelRepository { get; set; }
 
-        public BookModelController(ILogger<BookModelController> logger, IBookModelRepository BookModelRepository, IMapper mapper)
+        public BookTypeController(ILogger<BookTypeController> logger, IBookTypeRepository BookTypeRepository, IMapper mapper)
         {
             _logger = logger;
-            _BookModellRepository = BookModelRepository;
+            _BookTypelRepository = BookTypeRepository;
             _mapper = mapper;
         }
         /// <summary>
-        ///  获取列表
+        ///  获取全部列表
         /// </summary>
         /// <returns></returns>
         /// 
@@ -36,9 +39,9 @@ namespace BookWebApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllAsync()
         {
-            var blogList = await _BookModellRepository.Query();
+            var blogList = await _BookTypelRepository.Query();
 
-            var blogResources = _mapper.Map<List<BookModel>, IEnumerable<BookModelDto>>(blogList);
+            var blogResources = _mapper.Map<List<BookType>, IEnumerable<BookTypeDto>>(blogList);
 
             return Ok(blogResources);
         }
@@ -52,9 +55,9 @@ namespace BookWebApi.Controllers
 
         public async Task<IActionResult> GetByIdAsync(int id)
         {
-            var BookModel = await _BookModellRepository.QueryById(id);
+            var BookType = await _BookTypelRepository.QueryById(id);
 
-            var StaffResources = _mapper.Map<BookModel, BookModelDto>(BookModel);
+            var StaffResources = _mapper.Map<BookType, BookTypeDto>(BookType);
 
             return Ok(StaffResources);
         }
@@ -65,16 +68,30 @@ namespace BookWebApi.Controllers
         /// <returns></returns>
         [Route("Add")]
         [HttpPost]
-        public MessageModel<BookModelDto> Add(BookModel staff)
+        public MessageModel<BookTypeDto> Add(BookType staff)
         {
-
-            _BookModellRepository.Add(staff);
-            return new MessageModel<BookModelDto>()
+            bool result = false;
+            string msg = string.Empty;
+            try
             {
-                msg = "添加成功",
-                success = true
-            };
+                if (ModelState.IsValid)
+                {
+                  _BookTypelRepository.Add(staff);
+                    msg = "添加成功";
+                    result = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                msg = ex.Message;
+            }
 
+            return new MessageModel<BookTypeDto>()
+            {
+                msg = msg,
+                success = result
+
+            };
         }
 
         /// <summary>
@@ -83,14 +100,29 @@ namespace BookWebApi.Controllers
         /// <returns></returns>
         [Route("Update")]
         [HttpPost]
-        public MessageModel<BookModelDto> Update(BookModel dto)
+        public MessageModel<BookTypeDto> UpdateAsync(BookType dto)
         {
-            _BookModellRepository.Update(dto);
-
-            return new MessageModel<BookModelDto>()
+            bool result = false;
+            string msg = string.Empty;
+            try
             {
-                msg = "修改成功",
-                success = true
+                if (ModelState.IsValid)
+                {
+                     _BookTypelRepository.Update(dto);
+                    msg = "修改成功";
+                    result = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                msg = ex.Message;
+            }
+
+            return new MessageModel<BookTypeDto>()
+            {
+                msg = msg,
+                success = result
+
             };
         }
         /// <summary>
@@ -99,15 +131,49 @@ namespace BookWebApi.Controllers
         /// <returns></returns>
         [Route("Delete")]
         [HttpDelete]
-        public MessageModel<BookModelDto> Delete(int id)
+        public MessageModel<BookTypeDto> DeleteAsync(int id)
         {
-            _BookModellRepository.DeleteById(id);
-
-            return new MessageModel<BookModelDto>()
+            bool result = false;
+            string msg = string.Empty;
+            try
             {
-                msg = "删除成功",
-                success = true
+                if (ModelState.IsValid)
+                {
+                   _BookTypelRepository.DeleteById(id);
+                    msg = "删除成功";
+                    result = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                msg = ex.Message;
+            }
+
+            return new MessageModel<BookTypeDto>()
+            {
+                msg = msg,
+                success = result
+
             };
         }
+        /// <summary>
+        ///  获取中英文对应字段
+        /// </summary>
+        /// <returns></returns>
+        [Route("Info")]
+        [HttpGet]
+        [AllowAnonymous]
+        public MessageModel<string> Info()
+        {
+            var json = _BookTypelRepository.Info(new BookType());
+
+            return new MessageModel<string>()
+            {
+                msg = "获取成功",
+                success = true,
+                response = json
+            };
+        }
+
     }
 }

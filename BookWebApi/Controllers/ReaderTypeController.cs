@@ -5,11 +5,12 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Book.Comment;
 using Book.Core.Entities;
-using Book.Core.Interfaces;
-using BookEFSqt.Infrastructure.Resources;
+using Book.Core.IRepository;
+using Book.Core.EntityFramWork.Resources;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BookWebApi.Controllers
 {
@@ -67,12 +68,30 @@ namespace BookWebApi.Controllers
         [HttpPost]
         public MessageModel<ReaderTypeDto> Add(ReaderType staff)
         {
-
-            _readTypeRepository.Add(staff);
+            string message = string.Empty;
+            bool result = false;
+            try
+            {
+              
+                if (ModelState.IsValid)
+                {
+                    _readTypeRepository.Add(staff);
+                    message = "添加成功!";
+                    result = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                message = ex.Message.ToString();
+                result = false;
+            }
+        
+          
+          
             return new MessageModel<ReaderTypeDto>()
             {
-                msg = "添加成功",
-                success = true
+                msg = message,
+                success = result
             };
 
         }
@@ -85,12 +104,28 @@ namespace BookWebApi.Controllers
         [HttpPost]
         public MessageModel<ReaderTypeDto> Update(ReaderType dto)
         {
-            _readTypeRepository.Update(dto);
-
+            string message = string.Empty;
+            bool result = false;
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    _readTypeRepository.Update(dto);
+                    message = "修改成功!";
+                    result = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                result = false;
+                message = ex.Message;
+               
+            }
+         
             return new MessageModel<ReaderTypeDto>()
             {
-                msg = "修改成功",
-                success = true
+                msg = message,
+                success = result
             };
         }
         /// <summary>
@@ -101,13 +136,42 @@ namespace BookWebApi.Controllers
         [HttpDelete]
         public MessageModel<ReaderTypeDto> Delete(int id)
         {
-            _readTypeRepository.DeleteById(id);
-
+            string message = string.Empty;
+            bool result = false;
+            try
+            {
+                _readTypeRepository.DeleteById(id);
+                message = "";
+                result = true;
+            }
+            catch (Exception ex)
+            {
+                message = ex.Message;
+            }    
             return new MessageModel<ReaderTypeDto>()
             {
-                msg = "删除成功",
-                success = true
+                msg = message,
+                success = result
             };
         }
+        /// <summary>
+        ///  获取中英文对应字段
+        /// </summary>
+        /// <returns></returns>
+        [Route("Info")]
+        [HttpGet]
+        [AllowAnonymous]
+        public MessageModel<string> Info()
+        {
+            var json = _readTypeRepository.Info(new ReaderType());
+
+            return new MessageModel<string>()
+            {
+                msg = "获取成功",
+                success = true,
+                response = json
+            };
+        }
+ 
     }
 }

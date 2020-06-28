@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BookEFSqt.Infrastructure.Resources
+namespace Book.Core.EntityFramWork.Resources
 {
    public class ReaderTypeDto
     {
         /// <summary>
         /// 读者类型编号
         /// </summary>
-        public string Rid { set; get; }
+        public int Rid { set; get; }
         /// <summary>
         /// 读者类型名
         /// </summary>

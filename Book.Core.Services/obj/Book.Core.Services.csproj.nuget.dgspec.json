@@ -1,0 +1,482 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.Services\\Book.Core.Services.csproj": {}
+  },
+  "projects": {
+    "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj",
+        "projectName": "Book.Comment",
+        "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.cnblogs.com/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.Extensions.DependencyModel": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj",
+        "projectName": "Book.Core.IRepository",
+        "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.cnblogs.com/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IServices\\Book.Core.IServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IServices\\Book.Core.IServices.csproj",
+        "projectName": "Book.Core.IServices",
+        "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IServices\\Book.Core.IServices.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.cnblogs.com/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj"
+              },
+              "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj"
+              },
+              "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.Repository\\Book.Core.Repository.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.Repository\\Book.Core.Repository.csproj"
+              },
+              "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj"
+              },
+              "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\Book.Core.EntityFramWork.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\Book.Core.EntityFramWork.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.Repository\\Book.Core.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.Repository\\Book.Core.Repository.csproj",
+        "projectName": "Book.Core.Repository",
+        "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.Repository\\Book.Core.Repository.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.cnblogs.com/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj"
+              },
+              "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj"
+              },
+              "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\Book.Core.EntityFramWork.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\Book.Core.EntityFramWork.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.Services\\Book.Core.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.Services\\Book.Core.Services.csproj",
+        "projectName": "Book.Core.Services",
+        "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.Services\\Book.Core.Services.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.cnblogs.com/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj"
+              },
+              "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IServices\\Book.Core.IServices.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IServices\\Book.Core.IServices.csproj"
+              },
+              "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj",
+        "projectName": "Book.Core",
+        "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.cnblogs.com/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.RazorPages": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\Book.Core.EntityFramWork.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\Book.Core.EntityFramWork.csproj",
+        "projectName": "Book.Core.EntityFramWork",
+        "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\Book.Core.EntityFramWork.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.cnblogs.com/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj"
+              },
+              "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj": {
+                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

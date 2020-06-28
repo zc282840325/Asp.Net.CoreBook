@@ -1,0 +1,11 @@
+E:\Studying\Asp.Net.CoreBook\Book.Core\bin\Release\netcoreapp3.1\Book.Core.deps.json
+E:\Studying\Asp.Net.CoreBook\Book.Core\bin\Release\netcoreapp3.1\Book.Core.dll
+E:\Studying\Asp.Net.CoreBook\Book.Core\bin\Release\netcoreapp3.1\Book.Core.pdb
+E:\Studying\Asp.Net.CoreBook\Book.Core\bin\Release\netcoreapp3.1\Book.Comment.dll
+E:\Studying\Asp.Net.CoreBook\Book.Core\bin\Release\netcoreapp3.1\Book.Comment.pdb
+E:\Studying\Asp.Net.CoreBook\Book.Core\obj\Release\netcoreapp3.1\Book.Core.csprojAssemblyReference.cache
+E:\Studying\Asp.Net.CoreBook\Book.Core\obj\Release\netcoreapp3.1\Book.Core.AssemblyInfoInputs.cache
+E:\Studying\Asp.Net.CoreBook\Book.Core\obj\Release\netcoreapp3.1\Book.Core.AssemblyInfo.cs
+E:\Studying\Asp.Net.CoreBook\Book.Core\obj\Release\netcoreapp3.1\Book.Core.csproj.CopyComplete
+E:\Studying\Asp.Net.CoreBook\Book.Core\obj\Release\netcoreapp3.1\Book.Core.dll
+E:\Studying\Asp.Net.CoreBook\Book.Core\obj\Release\netcoreapp3.1\Book.Core.pdb

@@ -1,0 +1,8 @@
+E:\Studying\Asp.Net.CoreBook\Book.Comment\bin\Release\netcoreapp3.1\Book.Comment.deps.json
+E:\Studying\Asp.Net.CoreBook\Book.Comment\bin\Release\netcoreapp3.1\Book.Comment.dll
+E:\Studying\Asp.Net.CoreBook\Book.Comment\bin\Release\netcoreapp3.1\Book.Comment.pdb
+E:\Studying\Asp.Net.CoreBook\Book.Comment\obj\Release\netcoreapp3.1\Book.Comment.AssemblyInfoInputs.cache
+E:\Studying\Asp.Net.CoreBook\Book.Comment\obj\Release\netcoreapp3.1\Book.Comment.AssemblyInfo.cs
+E:\Studying\Asp.Net.CoreBook\Book.Comment\obj\Release\netcoreapp3.1\Book.Comment.dll
+E:\Studying\Asp.Net.CoreBook\Book.Comment\obj\Release\netcoreapp3.1\Book.Comment.pdb
+E:\Studying\Asp.Net.CoreBook\Book.Comment\obj\Release\netcoreapp3.1\Book.Comment.csprojAssemblyReference.cache

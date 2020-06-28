@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace BookEFSqt.Infrastructure.Resources
+namespace Book.Core.EntityFramWork.Resources
 {
    public class ReaderDto
     {
@@ -15,8 +15,7 @@ namespace BookEFSqt.Infrastructure.Resources
         /// <summary>
         /// 读者类型编号
         /// </summary>
-        [ForeignKey("Rid")]
-        public virtual ReaderType Rid { get; set; }
+        public int Rid { get; set; }
         /// <summary>
         /// 姓名
         /// </summary>

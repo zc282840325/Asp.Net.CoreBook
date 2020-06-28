@@ -1,0 +1,13 @@
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\bin\Release\netcoreapp3.1\BookEFSqt.Infrastructure.deps.json
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\bin\Release\netcoreapp3.1\BookEFSqt.Infrastructure.dll
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\bin\Release\netcoreapp3.1\BookEFSqt.Infrastructure.pdb
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\bin\Release\netcoreapp3.1\Book.Comment.dll
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\bin\Release\netcoreapp3.1\Book.Core.dll
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\bin\Release\netcoreapp3.1\Book.Core.pdb
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\bin\Release\netcoreapp3.1\Book.Comment.pdb
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\obj\Release\netcoreapp3.1\BookEFSqt.Infrastructure.csprojAssemblyReference.cache
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\obj\Release\netcoreapp3.1\BookEFSqt.Infrastructure.AssemblyInfoInputs.cache
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\obj\Release\netcoreapp3.1\BookEFSqt.Infrastructure.AssemblyInfo.cs
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\obj\Release\netcoreapp3.1\BookEFSqt.Infrastructure.csproj.CopyComplete
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\obj\Release\netcoreapp3.1\BookEFSqt.Infrastructure.dll
+E:\Studying\Asp.Net.CoreBook\BookEFSqt.Infrastructure\obj\Release\netcoreapp3.1\BookEFSqt.Infrastructure.pdb

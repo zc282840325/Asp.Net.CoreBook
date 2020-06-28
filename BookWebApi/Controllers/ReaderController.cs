@@ -5,11 +5,12 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Book.Comment;
 using Book.Core.Entities;
-using Book.Core.Interfaces;
-using BookEFSqt.Infrastructure.Resources;
+using Book.Core.IRepository;
+using Book.Core.EntityFramWork.Resources;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BookWebApi.Controllers
 {
@@ -68,13 +69,27 @@ namespace BookWebApi.Controllers
         public MessageModel<ReaderDto> Add(Reader staff)
         {
 
-            _readerRepository.Add(staff);
+            bool result = false;
+            string msg = string.Empty;
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    _readerRepository.Add(staff);
+                    msg = "添加成功";
+                    result = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                msg = ex.Message;
+            }
+
             return new MessageModel<ReaderDto>()
             {
-                msg = "添加成功",
-                success = true
+                msg = msg,
+                success = result
             };
-
         }
 
         /// <summary>
@@ -83,14 +98,28 @@ namespace BookWebApi.Controllers
         /// <returns></returns>
         [Route("Update")]
         [HttpPost]
-        public MessageModel<ReaderDto> Update(Reader dto)
+        public MessageModel<ReaderDto> UpdateAsync(Reader dto)
         {
-            _readerRepository.Update(dto);
+            bool result = false;
+            string msg = string.Empty;
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    _readerRepository.Update(dto);
+                    msg = "修改成功";
+                    result = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                msg = ex.Message;
+            }
 
             return new MessageModel<ReaderDto>()
             {
-                msg = "修改成功",
-                success = true
+                msg = msg,
+                success = result
             };
         }
         /// <summary>
@@ -99,14 +128,46 @@ namespace BookWebApi.Controllers
         /// <returns></returns>
         [Route("Delete")]
         [HttpDelete]
-        public MessageModel<ReaderDto> Delete(int id)
+        public MessageModel<ReaderDto> DeleteAsync(int id)
         {
-            _readerRepository.DeleteById(id);
+            bool result = false;
+            string msg = string.Empty;
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    _readerRepository.DeleteById(id);
+                    msg = "删除成功";
+                    result = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                msg = ex.Message;
+            }
 
             return new MessageModel<ReaderDto>()
             {
-                msg = "删除成功",
-                success = true
+                msg = msg,
+                success = result
+            };
+        }
+        /// <summary>
+        ///  获取中英文对应字段
+        /// </summary>
+        /// <returns></returns>
+        [Route("Info")]
+        [HttpGet]
+        [AllowAnonymous]
+        public MessageModel<string> Info()
+        {
+            var json = _readerRepository.Info(new Reader());
+
+            return new MessageModel<string>()
+            {
+                msg = "获取成功",
+                success = true,
+                response = json
             };
         }
     }

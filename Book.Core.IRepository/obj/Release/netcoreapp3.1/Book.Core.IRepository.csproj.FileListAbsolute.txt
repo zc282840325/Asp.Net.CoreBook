@@ -1,0 +1,13 @@
+E:\Studying\Asp.Net.CoreBook\Book.Core.IRepository\bin\Release\netcoreapp3.1\Book.Core.IRepository.deps.json
+E:\Studying\Asp.Net.CoreBook\Book.Core.IRepository\bin\Release\netcoreapp3.1\Book.Core.IRepository.dll
+E:\Studying\Asp.Net.CoreBook\Book.Core.IRepository\bin\Release\netcoreapp3.1\Book.Core.IRepository.pdb
+E:\Studying\Asp.Net.CoreBook\Book.Core.IRepository\bin\Release\netcoreapp3.1\Book.Comment.dll
+E:\Studying\Asp.Net.CoreBook\Book.Core.IRepository\bin\Release\netcoreapp3.1\Book.Core.dll
+E:\Studying\Asp.Net.CoreBook\Book.Core.IRepository\bin\Release\netcoreapp3.1\Book.Core.pdb
+E:\Studying\Asp.Net.CoreBook\Book.Core.IRepository\bin\Release\netcoreapp3.1\Book.Comment.pdb
+E:\Studying\Asp.Net.CoreBook\Book.Core.IRepository\obj\Release\netcoreapp3.1\Book.Core.IRepository.csprojAssemblyReference.cache
+E:\Studying\Asp.Net.CoreBook\Book.Core.IRepository\obj\Release\netcoreapp3.1\Book.Core.IRepository.AssemblyInfoInputs.cache
+E:\Studying\Asp.Net.CoreBook\Book.Core.IRepository\obj\Release\netcoreapp3.1\Book.Core.IRepository.AssemblyInfo.cs
+E:\Studying\Asp.Net.CoreBook\Book.Core.IRepository\obj\Release\netcoreapp3.1\Book.Core.IRepository.csproj.CopyComplete
+E:\Studying\Asp.Net.CoreBook\Book.Core.IRepository\obj\Release\netcoreapp3.1\Book.Core.IRepository.dll
+E:\Studying\Asp.Net.CoreBook\Book.Core.IRepository\obj\Release\netcoreapp3.1\Book.Core.IRepository.pdb

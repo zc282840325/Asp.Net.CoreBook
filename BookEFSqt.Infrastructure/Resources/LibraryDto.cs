@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BookEFSqt.Infrastructure.Resources
+namespace Book.Core.EntityFramWork.Resources
 {
    public class LibraryDto
     {

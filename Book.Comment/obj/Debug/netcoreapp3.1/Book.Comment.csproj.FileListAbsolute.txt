@@ -9,8 +9,8 @@ E:\Studying\BookWebApi\Book.Comment\obj\Debug\netcoreapp3.1\Book.Comment.csprojA
 E:\Studying\Asp.Net.CoreBook\Book.Comment\bin\Debug\netcoreapp3.1\Book.Comment.deps.json
 E:\Studying\Asp.Net.CoreBook\Book.Comment\bin\Debug\netcoreapp3.1\Book.Comment.dll
 E:\Studying\Asp.Net.CoreBook\Book.Comment\bin\Debug\netcoreapp3.1\Book.Comment.pdb
-E:\Studying\Asp.Net.CoreBook\Book.Comment\obj\Debug\netcoreapp3.1\Book.Comment.csprojAssemblyReference.cache
 E:\Studying\Asp.Net.CoreBook\Book.Comment\obj\Debug\netcoreapp3.1\Book.Comment.AssemblyInfoInputs.cache
 E:\Studying\Asp.Net.CoreBook\Book.Comment\obj\Debug\netcoreapp3.1\Book.Comment.AssemblyInfo.cs
 E:\Studying\Asp.Net.CoreBook\Book.Comment\obj\Debug\netcoreapp3.1\Book.Comment.dll
 E:\Studying\Asp.Net.CoreBook\Book.Comment\obj\Debug\netcoreapp3.1\Book.Comment.pdb
+E:\Studying\Asp.Net.CoreBook\Book.Comment\obj\Debug\netcoreapp3.1\Book.Comment.csprojAssemblyReference.cache

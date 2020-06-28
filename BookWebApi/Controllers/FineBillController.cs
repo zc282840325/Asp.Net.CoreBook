@@ -6,10 +6,11 @@ using Microsoft.AspNetCore.Http;
 using AutoMapper;
 using Book.Comment;
 using Book.Core.Entities;
-using Book.Core.Interfaces;
-using BookEFSqt.Infrastructure.Resources;
+using Book.Core.EntityFramWork.Resources;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Book.Core.IRepository;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BookWebApi.Controllers
 {
@@ -67,13 +68,28 @@ namespace BookWebApi.Controllers
         [HttpPost]
         public MessageModel<FineBillDto> Add(FineBill staff)
         {
-            _FineBilllRepository.Add(staff);
+            bool result = false;
+            string msg = string.Empty;
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                  _FineBilllRepository.Add(staff);
+                    msg = "添加成功";
+                    result = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                msg = ex.Message;
+            }
+
             return new MessageModel<FineBillDto>()
             {
-                msg = "添加成功",
-                success = true
-            };
+                msg = msg,
+                success = result
 
+            };
         }
 
         /// <summary>
@@ -82,14 +98,29 @@ namespace BookWebApi.Controllers
         /// <returns></returns>
         [Route("Update")]
         [HttpPost]
-        public MessageModel<FineBillDto> Update(FineBill dto)
+        public MessageModel<FineBillDto> UpdateAsync(FineBill dto)
         {
-            _FineBilllRepository.Update(dto);
+            bool result = false;
+            string msg = string.Empty;
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                   _FineBilllRepository.Update(dto);
+                    msg = "修改成功";
+                    result = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                msg = ex.Message;
+            }
 
             return new MessageModel<FineBillDto>()
             {
-                msg = "修改成功",
-                success = true
+                msg = msg,
+                success = result
+
             };
         }
         /// <summary>
@@ -98,14 +129,48 @@ namespace BookWebApi.Controllers
         /// <returns></returns>
         [Route("Delete")]
         [HttpDelete]
-        public MessageModel<FineBillDto> Delete(int id)
+        public MessageModel<FineBillDto> DeleteAsync(int id)
         {
-            _FineBilllRepository.DeleteById(id);
+            bool result = false;
+            string msg = string.Empty;
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                   _FineBilllRepository.DeleteById(id);
+                    msg = "删除成功";
+                    result = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                msg = ex.Message;
+            }
 
             return new MessageModel<FineBillDto>()
             {
-                msg = "删除成功",
-                success = true
+                msg = msg,
+                success = result
+
+            };
+        }
+
+        /// <summary>
+        ///  获取中英文对应字段
+        /// </summary>
+        /// <returns></returns>
+        [Route("Info")]
+        [HttpGet]
+        [AllowAnonymous]
+        public MessageModel<string> Info()
+        {
+            var json = _FineBilllRepository.Info(new FineBill());
+
+            return new MessageModel<string>()
+            {
+                msg = "获取成功",
+                success = true,
+                response = json
             };
         }
     }

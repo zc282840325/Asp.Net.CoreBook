@@ -1,0 +1,78 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>登录</title>
+</head>
+<link href="~/css/font.css" rel="stylesheet" />
+<link rel="stylesheet" href="~/css/login.css">
+<link rel="stylesheet" href="~/css/xadmin.css">
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="~/lib/layui/layui.js" charset="utf-8"></script>
+<body class="login-bg">
+
+    <div class="login layui-anim layui-anim-up">
+        <div class="message">图书管理后台登录界面</div>
+        <div id="darkbannerwrap"></div>
+
+        <form method="post" class="layui-form" id="myLogin">
+            <input name="name" placeholder="用户名" type="text" lay-verify="required" class="layui-input">
+            <hr class="hr15">
+            <input name="pass" lay-verify="required" placeholder="密码" type="password" class="layui-input">
+            <hr class="hr15">
+            <input value="登录" lay-submit lay-filter="login" style="width:100%;" type="button" id="btn">
+            <hr class="hr20">
+        </form>
+    </div>
+
+    <script>
+        $(function () {
+            $("#btn").click(function () {
+                $.ajax({
+                    url: 'http://129.211.11.64:801/api/Login/Login',
+                    method: 'Post',
+                    data: JSON.stringify({ LoginName: 'test', LoginPwd: 'test' }),
+                    async: true,
+                    contentType: "application/json",
+                    success: function (res) {
+                        debugger;
+                        if (res.success) {
+                            var token = res.response.token;
+                            setCookie("token", token);
+                             window.location.href = "./Index";
+                        }
+                        else {
+                            window.location.href = "./Login";
+                            alert(res.msg);
+                        }
+                    },
+                    error: function (xhr, textStatus, errorThrown) {
+                        alert("error");
+                        debugger;
+                        // 状态码
+                        console.log(XMLHttpRequest.status);
+                        // 状态
+                        console.log(XMLHttpRequest.readyState);
+                        // 错误信息
+                        console.log(textStatus);
+                    }
+                });
+            });
+        });
+
+          function setCookie(name, value) { 
+        var exp = new Date(); 
+        exp.setTime(exp.getTime() + 60 * 60*60 * 1000); 
+        document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString() + ";path=/"; 
+    }
+    </script>
+    <!-- 底部结束 -->
+</body>
+
+</html>
+
