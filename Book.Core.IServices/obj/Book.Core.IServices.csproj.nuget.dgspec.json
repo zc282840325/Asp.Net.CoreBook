@@ -1,29 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IServices\\Book.Core.IServices.csproj": {}
+    "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core.IServices\\Book.Core.IServices.csproj": {}
   },
   "projects": {
-    "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj": {
+    "D:\\GitHub\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj",
+        "projectUniqueName": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj",
         "projectName": "Book.Comment",
-        "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj",
+        "projectPath": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\obj\\",
+        "outputPath": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Comment\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.cnblogs.com/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -71,36 +74,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj": {
+    "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj",
+        "projectUniqueName": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj",
         "projectName": "Book.Core.IRepository",
-        "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj",
+        "projectPath": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\obj\\",
+        "outputPath": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core.IRepository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.cnblogs.com/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj": {
-                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj"
+              "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj": {
+                "projectPath": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj"
               }
             }
           }
@@ -128,48 +134,51 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IServices\\Book.Core.IServices.csproj": {
+    "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core.IServices\\Book.Core.IServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IServices\\Book.Core.IServices.csproj",
+        "projectUniqueName": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core.IServices\\Book.Core.IServices.csproj",
         "projectName": "Book.Core.IServices",
-        "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IServices\\Book.Core.IServices.csproj",
+        "projectPath": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core.IServices\\Book.Core.IServices.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IServices\\obj\\",
+        "outputPath": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core.IServices\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.cnblogs.com/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj": {
-                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj"
+              "D:\\GitHub\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj": {
+                "projectPath": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj"
               },
-              "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj": {
-                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj"
+              "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj": {
+                "projectPath": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj"
               },
-              "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.Repository\\Book.Core.Repository.csproj": {
-                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.Repository\\Book.Core.Repository.csproj"
+              "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core.Repository\\Book.Core.Repository.csproj": {
+                "projectPath": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core.Repository\\Book.Core.Repository.csproj"
               },
-              "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj": {
-                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj"
+              "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj": {
+                "projectPath": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj"
               },
-              "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\Book.Core.EntityFramWork.csproj": {
-                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\Book.Core.EntityFramWork.csproj"
+              "D:\\GitHub\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\Book.Core.EntityFramWork.csproj": {
+                "projectPath": "D:\\GitHub\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\Book.Core.EntityFramWork.csproj"
               }
             }
           }
@@ -197,42 +206,45 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.Repository\\Book.Core.Repository.csproj": {
+    "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core.Repository\\Book.Core.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.Repository\\Book.Core.Repository.csproj",
+        "projectUniqueName": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core.Repository\\Book.Core.Repository.csproj",
         "projectName": "Book.Core.Repository",
-        "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.Repository\\Book.Core.Repository.csproj",
+        "projectPath": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core.Repository\\Book.Core.Repository.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.Repository\\obj\\",
+        "outputPath": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core.Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.cnblogs.com/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj": {
-                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj"
+              "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj": {
+                "projectPath": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj"
               },
-              "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj": {
-                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj"
+              "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj": {
+                "projectPath": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj"
               },
-              "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\Book.Core.EntityFramWork.csproj": {
-                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\Book.Core.EntityFramWork.csproj"
+              "D:\\GitHub\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\Book.Core.EntityFramWork.csproj": {
+                "projectPath": "D:\\GitHub\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\Book.Core.EntityFramWork.csproj"
               }
             }
           }
@@ -260,36 +272,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj": {
+    "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj",
+        "projectUniqueName": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj",
         "projectName": "Book.Core",
-        "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj",
+        "projectPath": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\obj\\",
+        "outputPath": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.cnblogs.com/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj": {
-                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj"
+              "D:\\GitHub\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj": {
+                "projectPath": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Comment\\Book.Comment.csproj"
               }
             }
           }
@@ -323,39 +338,42 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\Book.Core.EntityFramWork.csproj": {
+    "D:\\GitHub\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\Book.Core.EntityFramWork.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\Book.Core.EntityFramWork.csproj",
+        "projectUniqueName": "D:\\GitHub\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\Book.Core.EntityFramWork.csproj",
         "projectName": "Book.Core.EntityFramWork",
-        "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\Book.Core.EntityFramWork.csproj",
+        "projectPath": "D:\\GitHub\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\Book.Core.EntityFramWork.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Studying\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\obj\\",
+        "outputPath": "D:\\GitHub\\Asp.Net.CoreBook\\BookEFSqt.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.cnblogs.com/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj": {
-                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj"
+              "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj": {
+                "projectPath": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core.IRepository\\Book.Core.IRepository.csproj"
               },
-              "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj": {
-                "projectPath": "E:\\Studying\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj"
+              "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj": {
+                "projectPath": "D:\\GitHub\\Asp.Net.CoreBook\\Book.Core\\Book.Core.csproj"
               }
             }
           }
@@ -411,7 +429,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

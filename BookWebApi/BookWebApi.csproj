@@ -2,10 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>E:\Studying\BookWebApi\BookWebApi\BookWebApi.xml</DocumentationFile>
+    <DocumentationFile>D:\GitHub\Asp.Net.CoreBook\BookWebApi\BookWebApi.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>E:\Studying\BookWebApi\BookWebApi\BookWebApi.xml</DocumentationFile>

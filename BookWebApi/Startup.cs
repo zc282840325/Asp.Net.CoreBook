@@ -107,21 +107,7 @@ namespace BookWebApi
             Configuration.Bind("Authentication:JwtBearer", jwtSetting);
 
             var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Authentication:JwtBearer:SecurityKey"]));
-            //验证
-            //services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            //.AddJwtBearer(config =>
-            //{
-            //    config.TokenValidationParameters = new TokenValidationParameters
-            //    {
-            //        ValidateIssuer = true,//是否验证Issuer
-            //        ValidateAudience = true,//是否验证Audience
-            //        ValidateLifetime = false,//是否验证失效时间
-            //        ValidateIssuerSigningKey = true,//是否验证SecurityKey
-            //        ValidAudience = Configuration["Authentication:JwtBearer:Audience"],//Audience
-            //        ValidIssuer = Configuration["Authentication:JwtBearer:Issuer"],//Issuer，这两项和前面签发jwt的设置一致
-            //        IssuerSigningKey = signingKey//拿到SecurityKey
-            //    };
-            //});
+          
             #endregion
 
             #region 添加跨域服务

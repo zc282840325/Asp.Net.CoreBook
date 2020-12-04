@@ -20,3 +20,15 @@ E:\Studying\Asp.Net.CoreBook\Book.Extensions\obj\Debug\netcoreapp3.1\Book.Extens
 E:\Studying\Asp.Net.CoreBook\Book.Extensions\obj\Debug\netcoreapp3.1\Book.Extensions.csproj.CopyComplete
 E:\Studying\Asp.Net.CoreBook\Book.Extensions\obj\Debug\netcoreapp3.1\Book.Extensions.dll
 E:\Studying\Asp.Net.CoreBook\Book.Extensions\obj\Debug\netcoreapp3.1\Book.Extensions.pdb
+D:\GitHub\Asp.Net.CoreBook\Book.Extensions\bin\Debug\netcoreapp3.1\Book.Extensions.deps.json
+D:\GitHub\Asp.Net.CoreBook\Book.Extensions\bin\Debug\netcoreapp3.1\Book.Extensions.dll
+D:\GitHub\Asp.Net.CoreBook\Book.Extensions\bin\Debug\netcoreapp3.1\Book.Extensions.pdb
+D:\GitHub\Asp.Net.CoreBook\Book.Extensions\bin\Debug\netcoreapp3.1\Book.Comment.dll
+D:\GitHub\Asp.Net.CoreBook\Book.Extensions\bin\Debug\netcoreapp3.1\Book.Comment.pdb
+D:\GitHub\Asp.Net.CoreBook\Book.Extensions\obj\Debug\netcoreapp3.1\Book.Extensions.csprojAssemblyReference.cache
+D:\GitHub\Asp.Net.CoreBook\Book.Extensions\obj\Debug\netcoreapp3.1\Book.Extensions.AssemblyInfoInputs.cache
+D:\GitHub\Asp.Net.CoreBook\Book.Extensions\obj\Debug\netcoreapp3.1\Book.Extensions.AssemblyInfo.cs
+D:\GitHub\Asp.Net.CoreBook\Book.Extensions\obj\Debug\netcoreapp3.1\Book.Extensions.csproj.CoreCompileInputs.cache
+D:\GitHub\Asp.Net.CoreBook\Book.Extensions\obj\Debug\netcoreapp3.1\Book.Extensions.csproj.CopyComplete
+D:\GitHub\Asp.Net.CoreBook\Book.Extensions\obj\Debug\netcoreapp3.1\Book.Extensions.dll
+D:\GitHub\Asp.Net.CoreBook\Book.Extensions\obj\Debug\netcoreapp3.1\Book.Extensions.pdb
